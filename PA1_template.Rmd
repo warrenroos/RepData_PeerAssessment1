@@ -7,8 +7,16 @@ output:
     keep_md: true
 ---
 
+## Notes 
+```{r, echo=TRUE}
+# always use echo = TRUE for displaying code for this assignment 
+```
 
 ## Loading and preprocessing the data
+```{r, echo=TRUE}
+summary(cars)
+head(cars)
+```
 
 
 
