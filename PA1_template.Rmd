@@ -10,12 +10,20 @@ output:
 ## Notes 
 ```{r, echo=TRUE}
 # always use echo = TRUE for displaying code for this assignment 
+# For... plotting...use any plotting system in R (i.e., base, lattice, ggplot2)
 ```
 
 ## Loading and preprocessing the data
 ```{r, echo=TRUE}
-summary(cars)
-head(cars)
+
+# read in data from file 
+activityLog <- read.table(
+    file = "activity.csv", header = TRUE, sep = ",", na.strings = "NA", 
+    colClasses = c("numeric", "Date", "numeric")
+  )
+summary(activityLog)
+head(activityLog)
+
 ```
 
 
